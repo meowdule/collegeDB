@@ -43,9 +43,9 @@
 
 ```plaintext
 sql-schema/
-├── 01-database-setup.sql            # 데이터베이스 및 사용자 생성
-├── 02-table-schema.sql              # DDL - 테이블 생성 및 제약 조건 설정
-└── 03-insert-initial-data.sql       # 초기 데이터 삽입
+├── 00-database-setup.sql            # 데이터베이스 사용자 생성
+├── 01-table-schema.sql              # DDL - 테이블 생성 및 제약 조건 설정
+└── 01-insert-initial-data.sql       # 초기 데이터 삽입
 ```
 
 <br>
