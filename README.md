@@ -28,9 +28,10 @@
 
 ## 🚀 사용 방법
 데이터베이스를 생성하고 초기화하려면 다음 단계를 따르세요:
-1. `college_test_ddl` 문을 실행하여 데이터베이스와 테이블을 생성합니다.
-2. `college_test_initial_dat` 문을 실행하여 데이터베이스의 기초데이터를 입력합니다.
-3. `college_user_grant` 문을 실행하여 해당 실습을 위한 사용자를 개별 생성하여 사용합니다.
+1. `00-database-setup.sql` 문을 실행하여 데이터베이스를 생성합니다.
+2. `01-table-schema.sql  ` 문을 실행하여 테이블을 생성합니다.
+3. `01-insert-initial-data.sql ` 문을 실행하여 데이터베이스의 기초데이터를 입력합니다.
+4. `01-dcl-privileges-security.sql` 문을 실행하여 해당 실습을 위한 사용자를 개별 생성하여 사용합니다.
 4. 자세한 설명은 [이 게시글](https://meowdule.tistory.com/109)을 순서대로 따라가세요.
 
 <br>
@@ -43,9 +44,10 @@
 
 ```plaintext
 sql-schema/
-├── 01-database-setup.sql            # 데이터베이스 및 사용자 생성
-├── 02-table-schema.sql              # DDL - 테이블 생성 및 제약 조건 설정
-└── 03-insert-initial-data.sql       # 초기 데이터 삽입
+├── 00-database-setup.sql            # 데이터베이스 및 사용자 생성
+├── 01-table-schema.sql              # DDL - 테이블 생성 및 제약 조건 설정
+├── 01-insert-initial-data.sql       # 초기 데이터 삽입
+└── 01-dcl-privileges-security.sql   # DCL - 권한 관리 및 보안
 ```
 
 <br>
@@ -78,9 +80,7 @@ sql-advanced/
 ├── 09-view-concepts.sql             # VIEW 개념 및 활용
 ├── 10-index-performance.sql         # 인덱스와 성능 최적화
 ├── 11-stored-procedure-function.sql # 저장 프로시저 & 함수
-├── 12-trigger-usage.sql             # 트리거 개념 및 사용법
-├── 13-dcl-privileges-security.sql   # DCL - 권한 관리 및 보안
-└── 14-advanced-sql.sql              # 고급 SQL 활용
+└── 12-trigger-usage.sql             # 트리거 개념 및 사용법
 ```
 
 ### 🔧 **기능 개발 브랜치 (`feature/*`)**  
